@@ -16,11 +16,14 @@ class Course < ApplicationRecord
         class_name: :User 
     )
 
-    belongs_to( :prereq,
-        primary_key: :id, 
-        foreign_key: :prereq_id,
-        class_name: :Course
-    )
+    # belongs_to( :prereq,
+    #     primary_key: :id, 
+    #     foreign_key: :prereq_id,
+    #     class_name: :Course
+    # )
     
-
+    # belongs_to( :enrolled_courses,
+    #     primary_key: :id,
+    #     foreign_key: 
+    # )
 end

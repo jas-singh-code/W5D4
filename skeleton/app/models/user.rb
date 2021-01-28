@@ -20,4 +20,8 @@ class User < ApplicationRecord
         class_name: :Enrollment
     )
 
+    
+
+
+
 end
