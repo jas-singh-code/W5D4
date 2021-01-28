@@ -8,8 +8,8 @@
 #  updated_at :datetime         not null
 #
 class User < ApplicationRecord
-    has_many( :shortened_urls
-        primary_key: id,
+    has_many( :shortened_urls,
+        primary_key: :id,
         foreign_key: :user_id,
         class_name: :ShortenedUrl
     )
